@@ -3,6 +3,8 @@ site_name: Product Selector Documentation
 site_description: Product Selector Documentation
 site_author: Seneca
 
+repo_name: 'senecapst/pst2-docs'
+repo_url: 'https://github.com/senecapst/pst2-docs'
 
 nav:
     - Overview: index.md
