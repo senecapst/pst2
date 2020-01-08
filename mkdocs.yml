@@ -1,0 +1,59 @@
+site_name: Product Selector Documentation
+# site_url: https://senecaxconnect.github.io/xconnect_docs
+site_description: Product Selector Documentation
+site_author: Seneca
+
+
+nav:
+    - Overview: index.md
+    - Getting Started: GettingStarted.md
+    - Usage Guide:
+        - Overview: ToolOverview.md
+        - New Project: NewProject.md
+        - Saved Projects: SavedProjects.md
+        - Saved Cameras: SavedCameras.md
+    - Technical Detail:
+        - Calculations Explained: Calculations.md
+        - OEM/ISV Partner Services: Partner.md
+
+theme:
+  name: 'material'
+  ## custom_dir: 'theme'
+  palette:
+    primary: 'blue grey'
+    accent: 'cyan'
+  ## logo: 'images/logo.svg'
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_css:
+  ## - stylesheets/dark_theme.css
+  - stylesheets/codehilite.css
+  - stylesheets/mermaid.css
+
+extra_javascript:
+    - https://unpkg.com/mermaid@7.0.9/dist/mermaid.min.js
+
+copyright: Copyright &copy; 2020 <a href="https://www.senecadata.com"> - Seneca Data Distributors, Inc</a>
