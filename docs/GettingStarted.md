@@ -13,7 +13,7 @@ The following instructions are how to access and register for the Product Select
 * The follow page will appear:
 
 <p align="center">
-  <img style="max-width:75%;" src="/Arrow.ProductSelector.Documentation/site/images/login_screen_1.png">
+  <img style="max-width:75%;" src="/pst2-docs/images/login_screen_1.png">
 </p>
 
 
@@ -25,15 +25,21 @@ The following instructions are how to access and register for the Product Select
 
 1. Click **New User? Sign Up** link on landing page
     <p>
-      <img style="max-width:75%;" src="/Arrow.ProductSelector.Documentation/site/images/new_user_1.png">
+      <img style="max-width:75%;" src="/pst2-docs/images/new_user_1.png">
     </p>
 
 2. Complete all fields in the sign-up form.
-    **Name** – Enter your full name
-    **Job Title** – Enter your job title
-    **Company** – If Seneca employee, enter “Seneca”
-    **Phone** – Must be entered in format (xxx)xxx-xxxx
-    **Email** – Must be a valid e-mail address to complete registration process
-    **Password** – Password must contain at least 8 characters including at least 1 special
+    * **Name** – Enter your full name
+    * **Job Title** – Enter your job title
+    * **Company** – If Seneca employee, enter “Seneca”
+    * **Phone** – Must be entered in format (xxx)xxx-xxxx
+    * **Email** – Must be a valid e-mail address to complete registration process
+    * **Password** – Password must contain at least 8 characters including at least 1 special
     character, 1 uppercase letter, 1 lowercase letter and one digit
 3. Click **Sign Up**
+4. You will be sent an e-mail confirmation that must be accepted before you can login to your account.
+
+    !!! note
+    Make sure to check your spam or junk filter. E-mail confirmation will be sent by noreply@senecapst.com.
+
+5. 

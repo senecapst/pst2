@@ -35,7 +35,7 @@ The key features of this application are:
 * E-mailing or downloading of project PDFs
 
 ## Getting Started
-To get started, navigate to the [Getting Started](/GettingStarted) section of this documentation.
+To get started, navigate to the [Getting Started](/pst2-docs/GettingStarted) section of this documentation.
 
 ## Usage Guide
 For detailed usage instructions, navigate to the Usage Guide section of this documentation.
