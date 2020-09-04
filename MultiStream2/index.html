@@ -93,7 +93,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#example-2" tabindex="0" class="md-skip">
+      <a href="#single-camera-stream-used-with-different-settings" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -478,8 +478,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#example-2" class="md-nav__link">
-    Example 2
+  <a href="#single-camera-stream-used-with-different-settings" class="md-nav__link">
+    Single camera stream used with different settings
   </a>
   
 </li>
@@ -555,8 +555,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#example-2" class="md-nav__link">
-    Example 2
+  <a href="#single-camera-stream-used-with-different-settings" class="md-nav__link">
+    Single camera stream used with different settings
   </a>
   
 </li>
@@ -582,7 +582,19 @@
                 
                   <h1>Multiple Streams used one at a time from one camera</h1>
                 
-                <h4 id="example-2">Example 2</h4>
+                <h4 id="single-camera-stream-used-with-different-settings">Single camera stream used with different settings</h4>
+<p>This is the Business hours case where it is OK to switch camera settings according to a schedule or the VMS allows a control to switch to a different channel that has a different resolution and FPS setting.
+<br>Multiple Motion settings are possible when none are 24/7
+<br>Still need to use multiple camera groups to cover the Resolution and FPS differences and get the correct amount of storage needed. 
+<br><strong><em>This is the first pass PST run to get the total storage.</em></strong>   Remember this amount for use in pass two.</p>
+<p><br>In the example below one line is a low FPS and the other is a high FPS.
+<br>At present, the PST adds the two BW together (blue + HighFPS) which will skew the result too much when many cameras have that setup. 
+<br>The workaround is to use the Excess Storage field to account for the ‘green’ storage amount on a second pass PST run.
+<br>The camera group for the second pass is the one with the higher bandwidth.
+<br>Keep increasing the excess storage field until the Total Storage amount is at least the amount seen in the pass1 run.</p>
+<p align="center">
+  <img style="max-width:95%;" src="/pst2-docs/images/PST-TWOBYONE.PNG">
+</p>
                 
                   
                 
