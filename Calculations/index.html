@@ -410,6 +410,26 @@
     High Level description of places where extra calculations happen
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#milestone-high-speed-drives-rules" class="md-nav__link">
+    Milestone High Speed Drives rules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adjusters" class="md-nav__link">
+    Adjusters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -559,6 +579,26 @@
     High Level description of places where extra calculations happen
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#milestone-high-speed-drives-rules" class="md-nav__link">
+    Milestone High Speed Drives rules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adjusters" class="md-nav__link">
+    Adjusters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -583,6 +623,18 @@
                   <h1>Calculations Explained</h1>
                 
                 <h3 id="high-level-description-of-places-where-extra-calculations-happen">High Level description of places where extra calculations happen</h3>
+<h4 id="milestone-high-speed-drives-rules">Milestone High Speed Drives rules</h4>
+<p>The Milestone Xprotect VMS has a concept called archiving where recent new data (LiveDB) is moved from high speed storage to slower speed (Archive) storage on a schedule.
+When 'Archiving' is selected for this VMS these rules apply:
+- If the camera total bit rate does not exceed 250 Mbits/sec, then the high speed drives are not needed in the solution.
+- When high speed drives are used, the schedule to Archive must be set correctly to avoid filling up the storage.
+<br>Doing this wrong will result in poor system performance when the LiveDB is full and the system goes into'Emergency Archiving' mode.
+- Here is an Archive schedule reference table for a typical Seneca '4L' server made with 1.2TB SAS drives:</p>
+<p align="center">
+  <img style="max-width:95%;" src="/pst2-docs/images/PST-ARCHIVE1.PNG">
+</p>
+
+<h4 id="adjusters">Adjusters</h4>
 <p>The tool has a concept we call "adjusters" that allow for automatic rule based calculation changes that will influence the recommended result.
 The values used for the adjusters come from our test results in the lab with the different VMSs</p>
 <p>When an adjuster is applied, it will also have an explanation mentioned in the Recommendation Explained area in the GUI and be at the bottom of the PDF file as text like this:</p>
