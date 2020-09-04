@@ -571,7 +571,14 @@
                   <h1>Calculations Explained</h1>
                 
                 <h3 id="high-level-description-of-places-where-extra-calculations-happen">High Level description of places where extra calculations happen</h3>
-<p>The tool has a concept we call "adjusters" that allow for automatic rule based calculation changes that will influence the recommended result.</p>
+<p>The tool has a concept we call "adjusters" that allow for automatic rule based calculation changes that will influence the recommended result.
+The values used for the adjusters come from our test results in the lab with the different VMSs</p>
+<p>When an adjuster is applied, it will also have an explanation mentioned in the Recommendation Explained area in the GUI nd be at the bottom of the PDF file as text like this:</p>
+<blockquote>
+<p>Reasons you are seeing this recommendation:
+<br> RAID6 was selected which lowers usable storage and system performance
+<br>Server Side Motion Detection is selected which requires more system resources and will affect system throughput</p>
+</blockquote>
                 
                   
                 
