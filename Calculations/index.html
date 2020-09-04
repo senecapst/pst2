@@ -573,12 +573,38 @@
                 <h3 id="high-level-description-of-places-where-extra-calculations-happen">High Level description of places where extra calculations happen</h3>
 <p>The tool has a concept we call "adjusters" that allow for automatic rule based calculation changes that will influence the recommended result.
 The values used for the adjusters come from our test results in the lab with the different VMSs</p>
-<p>When an adjuster is applied, it will also have an explanation mentioned in the Recommendation Explained area in the GUI nd be at the bottom of the PDF file as text like this:</p>
+<p>When an adjuster is applied, it will also have an explanation mentioned in the Recommendation Explained area in the GUI and be at the bottom of the PDF file as text like this:</p>
 <blockquote>
 <p>Reasons you are seeing this recommendation:
 <br> RAID6 was selected which lowers usable storage and system performance
 <br>Server Side Motion Detection is selected which requires more system resources and will affect system throughput</p>
 </blockquote>
+<p>A key choice that triggers many of these is where the <strong>Video Motion Detection</strong> (VMD) is being performed.
+<br>Be very careful when selecting this choice on the Projects setup GUI. 
+<br>When the VMS is performing the VMD on the server, the adjusters are in play and the results will change.
+<br>If the choice is "Camera Side", then the VMD adjusters do not get applied.</p>
+<p>Here is a basic list of the adjusters and their effects</p>
+<ul>
+<li>
+<p>Specialty Cameras</p>
+<p>Adjusters for these will add to the Total Bandwidth on a camera by camera basis.  These cameras have shown the need for extra CPU resource. 
+<br>The bandwidth is called the <strong>Effective Bandwidth</strong> and is shown only in the Recommendations.
+<br>This value will always be higher than the base camera bandwidth and will be used for product selection.</p>
+</li>
+<li>
+<p>RAID6</p>
+<p>A RAID6 choice will lower the usable storage and the performance of the system but provide a better data protection.</p>
+</li>
+<li>
+<p>SmartCodecs</p>
+<p>The effect of this option in the "Camera Type" will be to reduce the bandwidth of that camera group by a modest amount.
+The result is shown immediately in the Camera Group.</p>
+</li>
+<li>
+<p>H265 CODEC</p>
+<p>This CODEC effect is to lower the camera bandwidth and also lower the system throughput due to extra processing needed when VMD is done by the server.</p>
+</li>
+</ul>
                 
                   
                 
